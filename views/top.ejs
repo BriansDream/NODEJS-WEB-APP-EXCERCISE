@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top File</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body>
+
+   <% const Person = [
+       {
+           nama: "Andesta Febrianto Nainggolan",
+           url: "https://lh3.googleusercontent.com/-tU3SlAizpG8/YdJosBhlmBI/AAAAAAAAAGU/7zm-LBEUVFQ_FaKQL63bw9Z1QCE0RXDpACNcBGAsYHQ/w945-h600-p-k-no-nu/contentbox%2Bedited%2B2.jpg",
+           description: "Biasanya descriptive text ditandai dengan penggunaan easy tense dan fokus pada satu objek secara spesifik. Objek tersebut kemudian dibahas kembali secara lebih detail dalam teks deskriptif tersebut. Lalu apa bedanya dengan recount text?"
+       }
+   ]
+   %>
+
+  <div class="first-section">
+            <% Person.forEach(dataPerson => { %>
+                    <img src=<%= dataPerson.url %> >
+                    <h1><%= dataPerson.name %> </h1>
+                    <p><%= dataPerson.description %></p>
+              <%  }); %>     
+  </div>
+  
+  <p>
+      <a href="/index">
+           daftar belanjaan
+      </a>
+  </p>
+
+</body>
+</html>
